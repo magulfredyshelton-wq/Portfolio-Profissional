@@ -298,34 +298,6 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* Estado inicial: invisível */
-.animated-card {
-    opacity: 0;
-    transform: translateY(50px) scale(0.85);
-    transition: none;
-}
-
-/* Classe aplicada JS para ativar animation */
-.animated-card.animate {
-    animation: dropInBounce 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-
-@keyframes dropInBounce {
-    0% {
-        opacity: 0;
-        transform: translateY(50px) scale(0.85);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(-15px) scale(1.1);
-    }
-    70% {
-        transform: translateY(8px) scale(0.97);
-    }
-    100% {
-        transform: translateY(0) scale(1);
-    }
-}
 /* Projetos */
 .projects {
     background: white;
@@ -538,3 +510,4 @@ footer .container {
     transform: translateY(-2px);
 
 }
+
